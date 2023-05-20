@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Погодні дані</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+          <h1 class="mb-4">Погода у Києві сьогодні:</h1>
+          <table class="table">
+            <tbody>
+                <tr class="table-success">
+                    <td colspan="4">Сьогодні спостерігається: <span id="description"></span></td>
+                </tr>
+                <tr class="table-info">
+                  <td>Температура: <span id="temperature"></span></td>
+                  <td>Відчувається як: <span id="fells-like"></span></td>
+                  <td>Мінімально: <span id="min"></span></td>
+                  <td>Максимально: <span id="max"></span></td>
+                </tr>
+                <tr class="table-primary">
+                    <td colspan="2">Швидкість вітру: <span id="speed"></span></td>
+                    <td colspan="2">Напрямок вітру: <span id="deg"></span></td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+    </div>
+  
+
+  <script src="task2.js"></script>
+</body>
+</html>
